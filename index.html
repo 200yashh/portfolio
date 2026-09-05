@@ -1,1 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nilesh Parmar | Senior PHP &amp; Laravel Developer</title>
+    <meta name="description" content="Portfolio of Nilesh Parmar — a backend-focused PHP &amp; Laravel developer with 3.5+ years of experience building secure, scalable web applications, REST APIs and MySQL-backed systems.">
+    <meta name="keywords" content="Nilesh Parmar, Laravel Developer, PHP Developer, Backend Developer, REST API, MySQL, Ahmedabad, Core Techno">
+    <meta name="author" content="Nilesh Parmar">
+    <meta name="robots" content="index, follow">
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nilesh Parmar | Senior PHP &amp; Laravel Developer">
+    <meta property="og:description" content="Backend-focused PHP (Laravel) developer with 3.5+ years of experience building secure, scalable web applications and REST APIs.">
+    <meta property="og:image" content="images/profile.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- AOS (scroll animations) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ============ NAVIGATION ============ -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <span class="brand-mark">&lt;NP/&gt;</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                    aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-bar"></span>
+                <span class="toggler-bar"></span>
+                <span class="toggler-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-cta" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ============ HERO / HOME ============ -->
+        <section id="home" class="hero">
+            <div class="hero-grid" aria-hidden="true"></div>
+            <div class="hero-float hero-float-1" aria-hidden="true"><i class="bi bi-braces"></i></div>
+            <div class="hero-float hero-float-2" aria-hidden="true"><i class="bi bi-database"></i></div>
+            <div class="hero-float hero-float-3" aria-hidden="true"><i class="bi bi-hdd-network"></i></div>
+
+            <div class="container">
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-7 hero-text-col">
+                        <p class="path-eyebrow" data-aos="fade-up">~/nilesh-parmar <span class="cursor-blink">_</span></p>
+                        <h1 class="hero-name" data-aos="fade-up" data-aos-delay="80" id="heroName">Nilesh Parmar</h1>
+                        <h2 class="hero-title" data-aos="fade-up" data-aos-delay="140">
+                            <span id="typedTitle"></span><span class="type-cursor">|</span>
+                        </h2>
+                        <p class="hero-intro" data-aos="fade-up" data-aos-delay="200" id="heroIntro"></p>
+
+                        <div class="hero-stats" data-aos="fade-up" data-aos-delay="260" id="heroStats"></div>
+
+                        <div class="hero-cta" data-aos="fade-up" data-aos-delay="320">
+                            <a href="#projects" class="btn btn-cta-primary">View My Work</a>
+                            <a href="#" id="downloadResumeBtn" class="btn btn-cta-outline" download>
+                                <i class="bi bi-download"></i> Download Résumé
+                            </a>
+                            <a href="#contact" class="btn btn-cta-ghost">Contact Me</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 hero-photo-col" data-aos="fade-up" data-aos-delay="160">
+                        <div class="photo-frame">
+                            <span class="frame-corner tl"></span>
+                            <span class="frame-corner tr"></span>
+                            <span class="frame-corner bl"></span>
+                            <span class="frame-corner br"></span>
+                            <img src="images/profile.jpg" alt="Portrait of Nilesh Parmar, Senior PHP and Laravel Developer" class="hero-photo" id="heroPhoto">
+                            <div class="photo-badge">
+                                <span class="badge-value" id="badgeYears">3.5+</span>
+                                <span class="badge-label">Years<br>Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+                <span></span>
+            </a>
+        </section>
+
+        <!-- ============ ABOUT ============ -->
+        <section id="about" class="section section-light">
+            <div class="container">
+                <p class="path-eyebrow" data-aos="fade-up">~/about</p>
+                <h2 class="section-title" data-aos="fade-up">About Me</h2>
+
+                <div class="row gy-4 about-top">
+                    <div class="col-lg-7">
+                        <div class="about-summary" id="aboutSummary" data-aos="fade-up" data-aos-delay="80"></div>
+
+                        <h3 class="strengths-heading" data-aos="fade-up" data-aos-delay="120">Key Strengths</h3>
+                        <ul class="strengths-list" id="strengthsList" data-aos="fade-up" data-aos-delay="160"></ul>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="stat-panel" data-aos="fade-up" data-aos-delay="120">
+                            <div class="stat-panel-bar">
+                                <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+                                <span class="stat-panel-title">profile.json</span>
+                            </div>
+                            <div class="stat-panel-body" id="statPanelBody"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gy-4 about-details">
+                    <div class="col-md-6">
+                        <div class="detail-card" data-aos="fade-up">
+                            <h3 class="detail-card-title"><i class="bi bi-person-badge"></i> Personal Details</h3>
+                            <ul class="detail-list" id="personalDetailsList"></ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="detail-card detail-card-alt" data-aos="fade-up" data-aos-delay="80">
+                            <h3 class="detail-card-title"><i class="bi bi-briefcase"></i> Professional Details</h3>
+                            <ul class="detail-list" id="professionalDetailsList"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ EXPERIENCE ============ -->
+        <section id="experience" class="section section-dark">
+            <div class="container">
+                <p class="path-eyebrow" data-aos="fade-up">~/experience --timeline</p>
+                <h2 class="section-title" data-aos="fade-up">Work Experience</h2>
+                <p class="section-lead" data-aos="fade-up" data-aos-delay="60">A timeline of where I've built and shipped backend systems.</p>
+
+                <div class="timeline" id="experienceTimeline"></div>
+            </div>
+        </section>
+
+        <!-- ============ EDUCATION ============ -->
+        <section id="education" class="section section-light">
+            <div class="container">
+                <p class="path-eyebrow" data-aos="fade-up">~/education</p>
+                <h2 class="section-title" data-aos="fade-up">Education</h2>
+
+                <div class="timeline timeline-compact" id="educationTimeline"></div>
+            </div>
+        </section>
+
+        <!-- ============ SKILLS ============ -->
+        <section id="skills" class="section section-dark">
+            <div class="container">
+                <p class="path-eyebrow" data-aos="fade-up">~/skills --list</p>
+                <h2 class="section-title" data-aos="fade-up">Skills &amp; Technologies</h2>
+                <p class="section-lead" data-aos="fade-up" data-aos-delay="60">The stack I reach for when building and maintaining production systems.</p>
+
+                <div class="skills-grid" id="skillsGrid"></div>
+            </div>
+        </section>
+
+        <!-- ============ PROJECTS ============ -->
+        <section id="projects" class="section section-light">
+            <div class="container">
+                <p class="path-eyebrow" data-aos="fade-up">~/projects --all</p>
+                <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+                <p class="section-lead" data-aos="fade-up" data-aos-delay="60">A selection of systems I've built and maintained end to end.</p>
+
+                <div class="project-filters" id="projectFilters" data-aos="fade-up" data-aos-delay="100"></div>
+
+                <div class="row g-4" id="projectsGrid"></div>
+            </div>
+        </section>
+
+        <!-- ============ ACHIEVEMENTS ============ -->
+        <section id="achievements" class="section section-dark">
+            <div class="container">
+                <p class="path-eyebrow" data-aos="fade-up">~/achievements</p>
+                <h2 class="section-title" data-aos="fade-up">Key Achievements</h2>
+
+                <div class="row g-4" id="achievementsGrid"></div>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section id="contact" class="section section-light">
+            <div class="container">
+                <p class="path-eyebrow" data-aos="fade-up">~/contact --new</p>
+                <h2 class="section-title" data-aos="fade-up">Let's Connect</h2>
+                <p class="section-lead" data-aos="fade-up" data-aos-delay="60">Have a backend problem to solve, or a role worth talking about? Reach out.</p>
+
+                <div class="row gy-5">
+                    <div class="col-lg-5">
+                        <ul class="contact-info-list" id="contactInfoList" data-aos="fade-up"></ul>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <form id="contactForm" class="contact-form" data-aos="fade-up" data-aos-delay="80" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="cf-name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="cf-name" name="name" required minlength="2">
+                                    <div class="invalid-feedback">Please enter your name.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="cf-email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="cf-email" name="email" required>
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="cf-subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="cf-subject" name="subject" required minlength="3">
+                                    <div class="invalid-feedback">Please enter a subject.</div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="cf-message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="cf-message" name="message" rows="5" required minlength="10"></textarea>
+                                    <div class="invalid-feedback">Message should be at least 10 characters.</div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-cta-primary w-100 w-md-auto">Send Message</button>
+                                    <div class="form-success-msg" id="formSuccessMsg" role="status">
+                                        <i class="bi bi-check-circle-fill"></i> Thanks! Your message looks good — connect via email to reach me directly while this form isn't wired to a server yet.
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-inner">
+                <a href="#home" class="brand-mark">&lt;NP/&gt;</a>
+                <p class="footer-tagline">Backend systems, built with care.</p>
+                <ul class="footer-social" id="footerSocial"></ul>
+                <p class="footer-copy" id="footerCopy"></p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" aria-label="Scroll to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- ============ SCRIPTS ============ -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>
