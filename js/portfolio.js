@@ -14,7 +14,7 @@
 const portfolioData = {
 
     seo: {
-        title: "Nilesh Parmar | Senior PHP & Laravel Developer",
+        title: "Nilesh Parmar | PHP & Laravel Developer",
         description: "Portfolio of Nilesh Parmar — a backend-focused PHP & Laravel developer with 3.5+ years of experience building secure, scalable web applications, REST APIs and MySQL-backed systems.",
         keywords: "Nilesh Parmar, Laravel Developer, PHP Developer, Backend Developer, REST API, MySQL, Ahmedabad, Core Techno",
         author: "Nilesh Parmar"
@@ -32,7 +32,7 @@ const portfolioData = {
     },
 
     professional: {
-        title: "Senior PHP / Laravel Developer",
+        title: "PHP / Laravel Developer",
         heroIntro: "I build secure, scalable backend systems with Laravel and MySQL — from NDIS platforms to logistics software — and I like owning a problem end to end, from schema design to the API that ships it.",
         summary: [
             "I'm a backend-focused PHP (Laravel) developer with 3.5+ years of experience building, maintaining, and optimizing secure, scalable web applications. My core strength is Laravel — the framework, its MVC architecture, RESTful API design, and getting the most out of MySQL.",
@@ -77,7 +77,7 @@ const portfolioData = {
     ],
 
     professionalDetails: [
-        { icon: "bi-briefcase", label: "Designation", value: "Senior PHP / Laravel Developer" },
+        { icon: "bi-briefcase", label: "Designation", value: "PHP / Laravel Developer" },
         { icon: "bi-clock-history", label: "Experience", value: "3.5+ Years" },
         { icon: "bi-building", label: "Company", value: "Core Techno Pty Ltd" },
         { icon: "bi-cpu", label: "Specialization", value: "Laravel, REST APIs, MySQL" },
@@ -140,7 +140,7 @@ const portfolioData = {
         frontend: {
             label: "Frontend",
             icon: "bi-window",
-            items: ["HTML5", "CSS3", "Bootstrap", "JavaScript", "jQuery", "Vue.js (Basic)", "Tailwind CSS (Basic)"]
+            items: ["HTML5", "CSS3", "Bootstrap", "JavaScript", "jQuery"]
         },
         database: {
             label: "Database",
@@ -150,7 +150,7 @@ const portfolioData = {
         tools: {
             label: "Tools & Server",
             icon: "bi-tools",
-            items: ["Git", "Sourcetree", "Jira", "CPanel", "Linux (Basic)", "Nginx", "SSL Configuration"]
+            items: ["Git", "Sourcetree", "Jira", "CPanel", "SSL Configuration"]
         },
         practices: {
             label: "Practices",
