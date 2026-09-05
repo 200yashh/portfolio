@@ -745,6 +745,16 @@ textarea:focus-visible {
 .project-feature-list i { color: var(--accent-dark); margin-top: 0.2rem; font-size: 0.85rem; }
 .project-card-body .tech-badge-row { margin-top: auto; }
 .project-card-body .tech-badge { color: var(--accent-dark); background: var(--accent-soft); border-color: rgba(18,181,166,0.25); }
+.project-live-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1.1rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--accent-dark);
+}
+.project-live-link:hover { color: var(--ink); }
 
 /* ---------- Achievements ---------- */
 .achievement-card {

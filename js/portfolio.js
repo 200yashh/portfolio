@@ -36,7 +36,7 @@ const portfolioData = {
         heroIntro: "I build secure, scalable backend systems with Laravel and MySQL — from NDIS platforms to logistics software — and I like owning a problem end to end, from schema design to the API that ships it.",
         summary: [
             "I'm a backend-focused PHP (Laravel) developer with 3.5+ years of experience building, maintaining, and optimizing secure, scalable web applications. My core strength is Laravel — the framework, its MVC architecture, RESTful API design, and getting the most out of MySQL.",
-            "I work well independently, own backend modules end to end, and I'm comfortable being the person who debugs the hard issue and makes the call on how to fix it. I communicate clearly in English with both technical and non-technical stakeholders, which matters as much as the code itself."
+            "I work well independently and as part of a team, own backend modules end to end, and I'm comfortable being the person who debugs the hard issue and makes the call on how to fix it."
         ],
         yearsExperience: "3.5+",
         currentRole: "Backend Developer (Laravel)",
@@ -62,9 +62,9 @@ const portfolioData = {
     heroTechChips: ["Laravel", "PHP 8", "MySQL", "REST APIs"],
 
     strengths: [
-        { icon: "bi-person-check", text: "Works independently and owns backend systems end to end" },
+        { icon: "bi-person-check", text: "Works well independently and as part of a team, owning backend systems end to end" },
         { icon: "bi-bug", text: "Strong debugging and analytical problem-solving skills" },
-        { icon: "bi-chat-dots", text: "Clear English communication with technical and non-technical teams" },
+        { icon: "bi-people", text: "Collaborates closely with senior developers and cross-functional teams" },
         { icon: "bi-code-square", text: "Product-focused mindset with clean, maintainable code" }
     ],
 
@@ -198,6 +198,20 @@ const portfolioData = {
                 "Content management tools"
             ],
             technologies: ["PHP", "Laravel", "MySQL", "Bootstrap"]
+        },
+        {
+            name: "TrendWale — Kids Wear E-Commerce Store",
+            category: "ecommerce",
+            icon: "bi-shop",
+            description: "An end-to-end online store for a kids wear brand, built and set up on WordPress & WooCommerce — product catalog, cart, checkout, and shipping.",
+            highlights: [
+                "Full store setup — catalog, cart & checkout",
+                "Category-wise product listings (boys, girls, baby care, footwear)",
+                "WooCommerce-based order & payment flow",
+                "Shipping integration for pan-India delivery"
+            ],
+            technologies: ["WordPress", "WooCommerce", "Elementor"],
+            liveUrl: "https://trendwale.in/"
         }
     ],
 
@@ -373,6 +387,9 @@ function renderProjects() {
     portfolioData.projects.forEach((proj, i) => {
         const features = proj.highlights.map(h => `<li><i class="bi bi-check2"></i>${h}</li>`).join('');
         const techBadges = proj.technologies.map(t => `<span class="tech-badge">${t}</span>`).join('');
+        const liveLink = proj.liveUrl
+            ? `<a href="${proj.liveUrl}" target="_blank" rel="noopener" class="project-live-link">Visit Site <i class="bi bi-box-arrow-up-right"></i></a>`
+            : '';
 
         $grid.append(`
             <div class="col-md-6 col-lg-4 project-item" data-category="${proj.category}" data-aos="fade-up" data-aos-delay="${i * 80}">
@@ -385,6 +402,7 @@ function renderProjects() {
                         <p class="project-card-desc">${proj.description}</p>
                         <ul class="project-feature-list">${features}</ul>
                         <div class="tech-badge-row">${techBadges}</div>
+                        ${liveLink}
                     </div>
                 </div>
             </div>
